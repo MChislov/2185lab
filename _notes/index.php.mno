@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_LoggedUser" value="name:User_ID;datatype:int,name:User_Name;datatype:string,name:User_Surname;datatype:string,name:login;datatype:string,name:password;datatype:string,name:email;datatype:string,name:BirthDate;datatype:date,name:Added;datatype:datetime,name:rights;datatype:int,name:role;datatype:blob,name:ModDate;datatype:timestamp" />
+</info>

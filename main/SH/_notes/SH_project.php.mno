@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_All_projects" value="name:ID;datatype:int,name:ID_user_last_status_change;datatype:int,name:T_p_index;datatype:blob,name:T_Name;datatype:blob,name:T_Description;datatype:blob,name:ID_author;datatype:int,name:ID_status;datatype:int,name:Date_modified;datatype:timestamp,name:ID_user_modified;datatype:int,name:Date_created;datatype:datetime,name:Date_last_status_change;datatype:datetime" />
+	<infoitem key="UD_Project_by_ID" value="name:ID;datatype:int,name:ID_user_last_status_change;datatype:int,name:T_p_index;datatype:blob,name:T_Name;datatype:blob,name:T_Description;datatype:blob,name:ID_author;datatype:int,name:ID_status;datatype:int,name:Date_modified;datatype:timestamp,name:ID_user_modified;datatype:int,name:Date_created;datatype:datetime,name:Date_last_status_change;datatype:datetime" />
+</info>
