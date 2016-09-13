@@ -7,6 +7,7 @@ if (!isset($_SESSION)) {
 
 include'../aux_m/aux_login.php';
 include'../aux_m/aux_logout.php'; 
+include '../aux_m/aux_header.php';
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -20,12 +21,13 @@ include'../aux_m/aux_logout.php';
 
 <div class="header">
 
-<a href="<?php echo $logoutAction ?>">Logout</a>
+
 
 </div>
 Здесь все проекты:
 <input type="button"  value="Show All Projects" onclick="Show_project('all', 'small')"/>
 <input type="button"  value="Show Project 1" onclick="Show_project('1', 'full')"/>
+<input type="button" value="Create New" onclick="location.href='../projects/create_project.php'" />
 <div id="projects">
 
 </div>

@@ -4,6 +4,7 @@
 if (!isset($_SESSION)) {
   session_start();
 }
+include 'aux_m/aux_header.php';
 
 // ** Logout the current user. **
 $logoutAction = $_SERVER['PHP_SELF']."?doLogout=true";
@@ -128,7 +129,7 @@ $_SESSION['rights']=$row_LoggedUser['rights'];
 <h1>2185 Lab </h1>
 <div class="header">
 <?php if (isset($_SESSION['MM_Username'])) { ?>
-<a href="<?php echo $logoutAction ?>">Logout</a>
+
 <?php }; ?>
 </div>
 

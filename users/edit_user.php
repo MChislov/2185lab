@@ -4,7 +4,7 @@
 if (!isset($_SESSION)) {
   session_start();
 }
-
+include '../aux_m/aux_header.php';
 // ** Logout the current user. **
 $logoutAction = $_SERVER['PHP_SELF']."?doLogout=true";
 if ((isset($_SERVER['QUERY_STRING'])) && ($_SERVER['QUERY_STRING'] != "")){
@@ -113,9 +113,6 @@ $totalRows_Permissions_all = mysql_num_rows($Permissions_all);
 </head>
 
 <body>
-<div class="header">
-<a href="<?php echo $logoutAction ?>">Logout</a>
-</div>
 <?php if (isset($_GET['User_ID'])&& ($_SESSION['User_ID'])) { 
 echo $_SESSION['rights'];
 echo $_SESSION['User_ID'];
