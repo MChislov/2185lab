@@ -75,9 +75,10 @@ $totalRows_Project_by_ID = mysql_num_rows($Project_by_ID);
         <td width="10%"><?php echo $row_All_projects['T_p_index']; ?>&nbsp;</td>
         <td charset="windows-1251" width="30%"><?php echo $row_All_projects['T_Name']; ?>&nbsp;</td>
         <td charset="koi8-r"><?php echo $row_All_projects['T_Description']; ?>&nbsp;</td>
-        <div id="themes_<?php echo $row_All_projects['ID']; ?>" style="display:none">Themes&nbsp;</div>
-        <div id="files_<?php echo $row_All_projects['ID']; ?>" style="display:none">Files&nbsp;</div>
-        <div id="actions_<?php echo $row_All_projects['ID']; ?>" style="display:none">Actions&nbsp;</div>
+        <td id="head_<?php echo $row_All_projects['ID_author']; ?>" ><?php echo $row_All_projects['ID_author']; ?>&nbsp;</td>
+        <td id="themes_<?php echo $row_All_projects['ID']; ?>" >Themes&nbsp;</td>
+        <td id="files_<?php echo $row_All_projects['ID']; ?>" >Files&nbsp;</td>
+        <td id="actions_<?php echo $row_All_projects['ID']; ?>" >Actions&nbsp;</td>
       </tr>  
 
   <?php } while ($row_All_projects = mysql_fetch_assoc($All_projects)); ?>
